@@ -10,12 +10,8 @@
   }
 }
 body {
-  background: rgb(23, 119, 144);
-  background: linear-gradient(
-    351deg,
-    rgba(23, 119, 144, 1) 8%,
-    rgba(199, 45, 199, 0.9192051820728291) 96%
-  );
+  background: rgb(41,51,54);
+background: linear-gradient(351deg, rgba(41,51,54,1) 20%, rgba(181,172,181,0.9192051820728291) 94%);
 }
 .container {
   display: flex;
