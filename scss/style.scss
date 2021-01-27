@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // font-family: 'Noto Sans JP', sans-serif;
+  font-family: 'Ubuntu', sans-serif;
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+body {
+  background: rgb(23, 119, 144);
+  background: linear-gradient(
+    351deg,
+    rgba(23, 119, 144, 1) 8%,
+    rgba(199, 45, 199, 0.9192051820728291) 96%
+  );
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.calculator-grid {
+  width: 300px;
+  height: 600px;
+
+  .result {
+    height: 83.3px;
+    width: 100%;
+    // border: 2px solid #fff;
+    border-bottom: none;
+    background: rgba(62, 154, 211, 0.8);
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-around;
+    color: #fff;
+    padding: 20px;
+    word-wrap: break-word;
+    word-break: break-all;
+    .current-previous {
+      font-size: 24px;
+    }
+    .result-last {
+      font-size: 16px;
+      color: rgba(255, 255, 255, 0.7);
+    }
+  }
+  .input-elements {
+    display: flex;
+    flex-wrap: wrap;
+    flex-grow: 1;
+
+    .btn {
+      width: 75px;
+      flex-wrap: wrap;
+      height: 75px;
+      background: rgb(0, 0, 0);
+      border: 1px solid rgb(167, 167, 167);
+      font-size: 24px;
+      color: #fff;
+      &:nth-child(-n + 3) {
+        border-top: none;
+      }
+      outline: none;
+      &:active {
+        background: rgb(86, 116, 141);
+        color: #fff;
+      }
+      &-2 {
+        width: 150px;
+      }
+    }
+    #result {
+      background: rgb(122, 10, 153);
+      &:active {
+        background: rgb(124, 124, 124);
+        color: #fff;
+      }
+    }
+    .operator {
+      background: rgba(21, 37, 46, 0.9);
+    }
+  }
+}
